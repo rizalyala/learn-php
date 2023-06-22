@@ -21,6 +21,10 @@ class Fruit{
 $apple = new Fruit('apple','red');
 $mango = new Fruit('mango','orange');
 
+// Tidak diperlukan lagi karena contruct akan otomatis menjalankan fungsi set_name
+// $apple->set_name('apple','red');
+// $mango->set_name('mango','orange');
+
 echo $apple->get_name();
 echo "<br>";
 echo $mango->get_name();

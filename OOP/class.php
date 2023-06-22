@@ -1,12 +1,12 @@
 <?php
 
 // class
-class Fruit{
+class Fruits{
     public $name;
     public $color;
 
     // Methods
-    function __construct($name,$color){
+    function set_name($name,$color){
         $this->name = $name;
         $this->color = $color;
     }
@@ -18,8 +18,11 @@ class Fruit{
 }
 
 
-$apple = new Fruit('apple','red');
-$mango = new Fruit('mango','orange');
+$apple = new Fruits();
+$mango = new Fruits();
+
+$apple->set_name('apple','red');
+$mango->set_name('mango','orange');
 
 echo $apple->get_name();
 echo "<br>";
