@@ -19,12 +19,11 @@ class Car{
 
 class Buggati extends Car{
     public function model(){
-        echo 'What this name of car? ';
+        echo 'What this name of car?';
     }
 }
 
 $bugati = new Buggati('bugati','sport car');
-
 $bugati->model();
 $bugati->descrip();
 
